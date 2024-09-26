@@ -12,7 +12,7 @@ document.getElementById("donate-button").addEventListener("click", function(){
         return;
     }
     else {
-        alert(`Thank you for your generous donation of $${donateAmount}.`);
+       
 
         let remainAmount = availableAmount - donateAmount;
         let presentAmount = collectedAmount + donateAmount;
@@ -21,6 +21,8 @@ document.getElementById("donate-button").addEventListener("click", function(){
         document.getElementById("collected-amount").innerText = presentAmount;
        
         document.getElementById("donate-amount").value = "";
+
+        document.getElementById("my_modal_5").showModal();
     }
 });
 
@@ -40,7 +42,7 @@ document.getElementById("donate-button2").addEventListener("click", function(){
         return;
     }
     else {
-        alert(`Thank you for your generous donation of $${donateAmount}.`);
+        
 
         let remainAmount = availableAmount - donateAmount;
         let presentAmount = collectedAmount + donateAmount;
@@ -49,6 +51,8 @@ document.getElementById("donate-button2").addEventListener("click", function(){
         document.getElementById("collected-amount2").innerText = presentAmount;
        
         document.getElementById("donate-amount2").value = "";
+
+        document.getElementById("my_modal_5").showModal();
     }
 });
 
@@ -68,7 +72,7 @@ document.getElementById("donate-button3").addEventListener("click", function(){
         return;
     }
     else {
-        alert(`Thank you for your generous donation of $${donateAmount}.`);
+        
 
         let remainAmount = availableAmount - donateAmount;
         let presentAmount = collectedAmount + donateAmount;
@@ -77,6 +81,10 @@ document.getElementById("donate-button3").addEventListener("click", function(){
         document.getElementById("collected-amount3").innerText = presentAmount;
        
         document.getElementById("donate-amount3").value = "";
+
+        document.getElementById("my_modal_5").showModal();
     }
 });
- 
+
+
+// Modal function
